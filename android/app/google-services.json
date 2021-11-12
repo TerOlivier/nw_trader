@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179044028100",
+    "project_id": "nwtrader-8d1c6",
+    "storage_bucket": "nwtrader-8d1c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179044028100:android:4ddc269f4f2366234fc391",
+        "android_client_info": {
+          "package_name": "com.example.nw_trader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179044028100-cdhjsq15i3uouge1bnk18epj3503vlbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtbVV9Cbjs3P0vCdHm5i0mtpcT_P82HwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179044028100-cdhjsq15i3uouge1bnk18epj3503vlbf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
