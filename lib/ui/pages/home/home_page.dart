@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:nw_trader/constants/asset_path.dart';
+import 'package:nw_trader/constants/controllers.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -17,10 +18,11 @@ class HomePage extends StatelessWidget {
               child: Column(
                 children: [
                   DrawerHeader(
-                      child: SvgPicture.asset(
-                    nwLogoIconPath,
-                    color: Colors.white,
-                  )),
+                    child: SvgPicture.asset(
+                      nwLogoIconPath,
+                      color: Colors.white,
+                    ),
+                  ),
                   DrawerListTile(
                     title: "Dashboard",
                     svgSrc: dashboardIconPath,
@@ -46,6 +48,7 @@ class HomePage extends StatelessWidget {
                     svgSrc: notificationIconPath,
                     press: () {},
                   ),
+                  const Divider(),
                   DrawerListTile(
                     title: "Profile",
                     svgSrc: profileIconPath,
@@ -55,6 +58,12 @@ class HomePage extends StatelessWidget {
                     title: "Settings",
                     svgSrc: settingsIconPath,
                     press: () {},
+                  ),
+                  const Divider(),
+                  DrawerListTile(
+                    title: "Log Out",
+                    svgSrc: logoutIconPath,
+                    press: () => authController.signOut(),
                   ),
                 ],
               ),

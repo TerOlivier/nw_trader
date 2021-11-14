@@ -7,6 +7,7 @@ import 'package:nw_trader/controllers/auth_controller.dart';
 
 import 'package:nw_trader/services/theme_services.dart';
 import 'package:nw_trader/ui/pages/authentication/authentication_page.dart';
+import 'package:nw_trader/ui/pages/home/home_page.dart';
 
 import 'ui/theme.dart';
 
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
       theme: Themes.light,
       darkTheme: Themes.dark,
       themeMode: ThemeServices().theme,
-      home: AuthenticationPage(),
+      home: HomePage(),
     );
   }
 }
