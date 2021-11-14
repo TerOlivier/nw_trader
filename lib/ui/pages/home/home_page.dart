@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'package:nw_trader/constants/asset_path.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -16,42 +18,42 @@ class HomePage extends StatelessWidget {
                 children: [
                   DrawerHeader(
                       child: SvgPicture.asset(
-                    "assets/images/nw_logo.svg",
+                    nwLogoIconPath,
                     color: Colors.white,
                   )),
                   DrawerListTile(
                     title: "Dashboard",
-                    svgSrc: "assets/icons/menu_dashbord.svg",
+                    svgSrc: dashboardIconPath,
                     press: () {},
                   ),
                   DrawerListTile(
                     title: "Transactions",
-                    svgSrc: "assets/icons/menu_tran.svg",
+                    svgSrc: transactionsIconPath,
                     press: () {},
                   ),
                   DrawerListTile(
                     title: "Buy Orders",
-                    svgSrc: "assets/icons/menu_doc.svg",
+                    svgSrc: documentsIconPath,
                     press: () {},
                   ),
                   DrawerListTile(
                     title: "Sell Orders",
-                    svgSrc: "assets/icons/menu_doc.svg",
+                    svgSrc: documentsIconPath,
                     press: () {},
                   ),
                   DrawerListTile(
-                    title: "Notification",
-                    svgSrc: "assets/icons/menu_notification.svg",
+                    title: "Notifications",
+                    svgSrc: notificationIconPath,
                     press: () {},
                   ),
                   DrawerListTile(
                     title: "Profile",
-                    svgSrc: "assets/icons/menu_profile.svg",
+                    svgSrc: profileIconPath,
                     press: () {},
                   ),
                   DrawerListTile(
                     title: "Settings",
-                    svgSrc: "assets/icons/menu_setting.svg",
+                    svgSrc: settingsIconPath,
                     press: () {},
                   ),
                 ],
